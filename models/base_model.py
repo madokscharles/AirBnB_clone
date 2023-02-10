@@ -9,12 +9,24 @@ from datetime import datetime
 
 class BaseModel:
     """ class BaseModel: Parent class which other classes inherit from """
-    def __init__(self):
-        """ Initializes instance of class BaseModel """
+    def __init__(self, *args, **kwargs):
+        """ Initializes instance of class BaseModel 
 
-        self.id = str(uuid.uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+        Using *args and **kwargs arguments for the constructor
+
+        Args: wont be used
+        Kwargs: if kwargs is not empty
+        """
+
+        if kwargs and kwargs != []:
+            value = kwargs["created_at"]
+            self.id = kwargs["id"]
+            self.created_at = datetime.strptime(value, '%Y-%m-%dT%H:%M:%S.%f')
+            self.updated_at = self.created_at
+        else:
+            self.id = str(uuid.uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
 
     def __str__(self):
         """ Prints string representing the class """
