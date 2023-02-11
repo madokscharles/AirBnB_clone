@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """Defines  the Place Class"""
+
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
-    """Represent a place.
+    """Represent a place
+
         Attributes:
             city_id (str) = The City id.
             user_id (str) = The User id.
@@ -25,8 +27,8 @@ class Place(BaseModel):
    description = ""
    number_rooms = 0
    number_bathrooms = 0
-   max_guest = ""
-   price_by_night = ""
+   max_guest = 0
+   price_by_night = 0
    latitude = 0.0
    longtitude = 0.0
    amenity_ids = []

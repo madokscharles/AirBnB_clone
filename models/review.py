@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """Defines the Review Class."""
+
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
     """Represnet a review.
+
     Attributes:
         place_id (str) = The Place id.
         user_id (str) = The User id.
