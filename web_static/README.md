@@ -1,17 +1,21 @@
-### Airbnb Clone
+0x01. AirBnB clone - Web static
 
-#### Description
-> This is one phase of the Airbnb Clone: the HTML and CSS part. The Images
-> folder holds icons for the site (e.g. logo, bathroom icons, bedroom icons,
-> guest icons). The Styles folder holds CSS styling files. The largest numbered
-> style file of each category (e.g. common, footer, header, places) is most
-> relevant to the finished product. The highlest numbered index.html file is
-> likewise the most relevant to the finished product.
+Description
+**************
+
+Now that you have a command interpreter for managing your AirBnB objects, it’s time to make them alive!
+
+Before developing a big and complex web application, we will build the front end step-by-step.
+
+The first step is to “design” / “sketch” / “prototype” each element:
+
+Create simple HTML static pages
+Style guide
+Fake contents
+No Javascript
+No data loaded from anything
+During this project, you will learn how to manipulate HTML and CSS languages. HTML is the structure of your page, it should be the first thing to write. CSS is the styling of your page, the design. I really encourage you to fix your HTML part before starting the styling. Indeed, without any structure, you can’t apply any design.
+
+Before starting, please fork or clone the repository AirBnB_clone from your partner if you were not the owner of the previous project.
 
 ![M](https://i.imgur.com/ujItUkN.png)
-
-### Environment
-* Languages: HTML, CSS
-* OS: Ubuntu 14.04 LTS
-* Style guidelines: ```./wc3validator.py [filename]```
-* Preview: paste index.html link and run on: http://htmlpreview.github.io/?
